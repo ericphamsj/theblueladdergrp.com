@@ -12,7 +12,7 @@ export function Footer() {
               Expert CALGreen Inspections and EOS Solutions for Construction Businesses
             </p>
             <div className="flex items-center gap-4">
-              <Link href="https://linkedin.com" className="hover:text-[#8DC63F] transition-colors">
+              <Link href="https://www.linkedin.com/in/FaithMackarness/" target="_blank" className="hover:text-[#8DC63F] transition-colors">
                 <Linkedin className="h-5 w-5" />
                 <span className="sr-only">LinkedIn</span>
               </Link>
@@ -21,6 +21,9 @@ export function Footer() {
           <div>
             <h4 className="font-semibold mb-4 opacity-90">Quick Links</h4>
             <nav className="flex flex-col gap-2">
+              <Link href="/" className="text-sm opacity-75 hover:opacity-100 hover:text-[#8DC63F] transition-colors">
+                Home
+              </Link>
               <Link href="/about" className="text-sm opacity-75 hover:opacity-100 hover:text-[#8DC63F] transition-colors">
                 About Us
               </Link>
@@ -30,25 +33,17 @@ export function Footer() {
               <Link href="/contact" className="text-sm opacity-75 hover:opacity-100 hover:text-[#8DC63F] transition-colors">
                 Contact
               </Link>
-              <Link href="/blog" className="text-sm opacity-75 hover:opacity-100 hover:text-[#8DC63F] transition-colors">
-                Green Building Blog
-              </Link>
+
             </nav>
           </div>
           <div>
             <h4 className="font-semibold mb-4 opacity-90">Services</h4>
             <nav className="flex flex-col gap-2">
-              <Link href="/services#calgreen" className="text-sm opacity-75 hover:opacity-100 hover:text-[#8DC63F] transition-colors">
+              <Link href="/services" className="text-sm opacity-75 hover:opacity-100 hover:text-[#8DC63F] transition-colors">
                 CALGreen Services
               </Link>
-              <Link href="/services#eos" className="text-sm opacity-75 hover:opacity-100 hover:text-[#8DC63F] transition-colors">
+              <Link href="/eos-for-contractors" className="text-sm opacity-75 hover:opacity-100 hover:text-[#8DC63F] transition-colors">
                 EOS Solutions
-              </Link>
-              <Link href="/services#waste-management" className="text-sm opacity-75 hover:opacity-100 hover:text-[#8DC63F] transition-colors">
-                Waste Management
-              </Link>
-              <Link href="/services#consulting" className="text-sm opacity-75 hover:opacity-100 hover:text-[#8DC63F] transition-colors">
-                Green Building Consulting
               </Link>
             </nav>
           </div>
@@ -58,10 +53,10 @@ export function Footer() {
               <p>Monday – Friday</p>
               <p>9 AM – 5 PM PST</p>
               <p className="hover:text-[#8DC63F] transition-colors">
-                <a href="mailto:contact@blueladdergroup.com">contact@blueladdergroup.com</a>
+                <a href="mailto:Faith@TheBlueLadderGrp.com">Faith@TheBlueLadderGrp.com</a>
               </p>
               <p className="hover:text-[#8DC63F] transition-colors">
-                <a href="tel:+15551234567">(555) 123-4567</a>
+                <a href="tel:+14087282287">(408) 728-2287</a>
               </p>
             </div>
           </div>
@@ -73,14 +68,14 @@ export function Footer() {
             <p className="text-sm opacity-60">
               © {new Date().getFullYear()} The Blue Ladder Group. All rights reserved.
             </p>
-            <nav className="flex gap-6">
+            {/* <nav className="flex gap-6">
               <Link href="/privacy" className="text-sm opacity-60 hover:opacity-100 hover:text-[#8DC63F] transition-colors">
                 Privacy Policy
               </Link>
               <Link href="/terms" className="text-sm opacity-60 hover:opacity-100 hover:text-[#8DC63F] transition-colors">
                 Terms of Service
               </Link>
-            </nav>
+            </nav> */}
           </div>
         </div>
       </div>

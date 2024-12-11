@@ -76,7 +76,6 @@ export default function Contact() {
               </CardHeader>
               <CardContent>
                 <div className="flex items-start gap-2">
-                  <MapPin className="h-5 w-5 text-primary mt-1" />
                   <p>Supporting architects, general contractors, homeowners, and municipalities with CALGreen and EOS services tailored to their needs across California.</p>
                 </div>
               </CardContent>
@@ -87,9 +86,11 @@ export default function Contact() {
                 <CardTitle>Stay Connected</CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="flex items-center gap-2">
-                  <Linkedin className="h-5 w-5 text-primary" />
+                <div className="flex flex-col gap-4">
                   <p>Follow us on LinkedIn for updates on green construction innovations and business strategies.</p>
+                  <div className="flex items-center gap-4">
+                    <Linkedin className="h-6 w-6 text-primary hover:text-primary/80 cursor-pointer" />
+                  </div>
                 </div>
               </CardContent>
             </Card>

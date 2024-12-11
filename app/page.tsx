@@ -8,24 +8,24 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] flex items-center">
+      <section className="relative min-h-[800px] flex items-center" style={{ height: 'calc(100vh - 110px)' }}>
         <Image
-          src="https://placehold.co/1920x1080"
+          src="/living-room-vertical-green-wall.jpeg"
           alt="Sustainable building project"
           fill
-          className="object-cover"
+          className="object-cover object-bottom"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/95 to-background/50" />
+        <div className="absolute inset-0 bg-gradient-to-r from-green-900/60 to-green-800/60" />
         <div className="container relative">
-          <div className="max-w-[800px] space-y-8">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold architectural-title">
+          <div className="max-w-[900px] space-y-8 text-white text-center mx-auto">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-light architectural-title">
               Elevating Construction Through Sustainability
             </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground">
+            <p className="text-xl font-light md:text-2xl">
               Expert CALGreen Inspections, EOS Solutions, and Sustainable Building Practices
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex items-center justify-center flex-col sm:flex-row gap-4">
               <Button size="lg" asChild>
                 <Link href="/contact">Get Started Today</Link>
               </Button>
@@ -48,13 +48,13 @@ export default function Home() {
                 image: "https://placehold.co/600x400"
               },
               {
-                title: "EOS Solutions",
-                description: "Transform your construction business with proven operational excellence strategies",
+                title: "Sustainable Building",
+                description: "Expert guidance in green building practices and environmental compliance",
                 image: "https://placehold.co/600x400"
               },
               {
-                title: "Quick Response",
-                description: "Direct access to expertise with rapid response times for all your needs",
+                title: "EOS Solutions",
+                description: "Transform your construction business with proven operational excellence strategies",
                 image: "https://placehold.co/600x400"
               }
             ].map((feature, index) => (
@@ -78,7 +78,7 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section className="py-20 bg-accent">
+      <section className="py-20 bg-muted">
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative h-[600px]">
@@ -226,7 +226,7 @@ export default function Home() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-20 bg-secondary text-secondary-foreground">
+      <section className="py-20 bg-white text-secondary-foreground">
         <div className="container">
           <h2 className="text-3xl md:text-4xl font-bold architectural-title text-center mb-12">
             What Our Clients Say
@@ -234,19 +234,19 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                quote: "Faith's expertise in CALGreen compliance saved us countless hours and ensured our project met all requirements.",
-                author: "John Smith",
-                role: "General Contractor"
+                quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                author: "Marcus Aurelius",
+                role: "Project Manager"
               },
               {
-                quote: "The EOS implementation transformed our operations. We're more efficient and profitable than ever.",
-                author: "Sarah Johnson",
-                role: "Construction Company Owner"
+                quote: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                author: "Julia Domna",
+                role: "Development Director"
               },
               {
-                quote: "Responsive, knowledgeable, and passionate about sustainable building. A true partner in our success.",
-                author: "Michael Chen",
-                role: "Architect"
+                quote: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+                author: "Lucius Seneca",
+                role: "Construction Executive"
               }
             ].map((testimonial, index) => (
               <Card key={index} className="bg-background text-foreground">

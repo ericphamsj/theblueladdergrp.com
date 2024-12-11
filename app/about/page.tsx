@@ -7,11 +7,12 @@ import { PageHero } from "@/components/page-hero"
 
 export default function About() {
   return (
-    <div className="flex flex-col pt-40">
+    <div className="flex flex-col">
       <PageHero
         title="Faith Mackarness: A Leader in Green Construction"
         description="Third-generation builder committed to sustainable construction and business excellence"
         image="https://placehold.co/1920x1080"
+        imageAlt="Sustainable construction project"
       />
 
       {/* Background */}
@@ -50,7 +51,7 @@ export default function About() {
       </section>
 
       {/* Certifications */}
-      <section className="py-20 bg-accent">
+      <section className="py-20 bg-muted">
         <div className="container">
           <h2 className="text-3xl font-bold architectural-title text-center mb-12">
             Certifications and Expertise
@@ -124,7 +125,7 @@ export default function About() {
       </section>
 
       {/* Differentiators */}
-      <section className="py-20 bg-secondary text-secondary-foreground">
+      <section className="py-20 bg-muted text-secondary-foreground">
         <div className="container">
           <h2 className="text-3xl font-bold architectural-title text-center mb-12">
             What Sets Us Apart

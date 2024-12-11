@@ -3,19 +3,17 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { CheckCircle } from 'lucide-react'
+import { PageHero } from "@/components/page-hero"
 
 export default function Services() {
   return (
-    <div className="flex flex-col gap-20 py-20 pt-40">
-      {/* Introduction */}
-      <section className="container">
-        <div className="max-w-[800px] mx-auto text-center space-y-8">
-          <h1 className="text-4xl font-bold tracking-tighter">Comprehensive Solutions for a Greener Future</h1>
-          <p className="text-lg text-muted-foreground">
-            At The Blue Ladder Group, we specialize in CALGreen compliance, business optimization, and sustainable building practices, helping construction professionals achieve sustainability and efficiency.
-          </p>
-        </div>
-      </section>
+    <div className="flex flex-col">
+      <PageHero
+        title="Comprehensive Solutions for a Greener Future"
+        image="https://placehold.co/1920x1080"
+        imageAlt="Sustainable building practices"
+        description="At The Blue Ladder Group, we specialize in CALGreen compliance, business optimization, and sustainable building practices, helping construction professionals achieve sustainability and efficiency."
+      />
 
       {/* CALGreen Services */}
       <section className="bg-muted py-20" id="calgreen">
@@ -62,7 +60,7 @@ export default function Services() {
       </section>
 
       {/* EOS Services */}
-      <section className="container" id="eos">
+      <section className="container py-20" id="eos">
         <div className="space-y-12">
           <h2 className="text-3xl font-bold tracking-tighter text-center">Streamline and Scale Your Construction Business</h2>
           <div className="grid md:grid-cols-2 gap-8">
@@ -150,7 +148,7 @@ export default function Services() {
       </section>
 
       {/* Our Process */}
-      <section className="container">
+      <section className="container py-20">
         <h2 className="text-3xl font-bold tracking-tighter text-center mb-12">How We Work Together</h2>
         <div className="grid md:grid-cols-3 gap-8 max-w-[1000px] mx-auto">
           {[
@@ -180,7 +178,7 @@ export default function Services() {
       </section>
 
       {/* Target Audience Section */}
-      <section className="bg-secondary text-secondary-foreground py-20">
+      <section className="bg-muted text-secondary-foreground py-20">
         <div className="container">
           <h2 className="text-3xl font-bold tracking-tighter text-center mb-12">Who We Serve</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -224,10 +222,10 @@ export default function Services() {
       </section>
 
       {/* CTA */}
-      <section className="container">
+      <section className="container py-20">
         <div className="text-center space-y-8">
           <h2 className="text-3xl font-bold tracking-tighter">Ready to Build Smarter and Greener?</h2>
-          <Button size="lg" asChild>
+          <Button size="lg" asChild className="max-w-[300px] whitespace-normal h-auto py-4">
             <Link href="/contact">Schedule Your Service Consultation Today</Link>
           </Button>
         </div>

@@ -3,36 +3,24 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { CheckCircle, ArrowRight } from 'lucide-react'
+import { PageHero } from "@/components/page-hero"
 
 export default function EOSForContractors() {
   return (
-    <div className="flex flex-col gap-x-20 pb-20">
-      {/* Hero Section */}
-      <section className="relative pt-40">
-        <Image
-          src="https://placehold.co/1920x600"
-          alt="Construction site"
-          fill
-          className="object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/95 to-background/50" />
-        <div className="container relative">
-          <div className="max-w-[800px] space-y-8">
-            <h1 className="text-5xl md:text-6xl font-bold architectural-title">
-              EOS Solutions for General Contractors
-            </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground">
-              Transform your construction business with the Entrepreneurial Operating System
-            </p>
-            <Button size="lg" asChild>
-              <Link href="#contact">Schedule a Consultation</Link>
-            </Button>
-          </div>
-        </div>
-      </section>
+    <div className="flex flex-col">
+      <PageHero
+        title="EOS Solutions for General Contractors"
+        description="Transform your construction business with the Entrepreneurial Operating System"
+        image="https://placehold.co/1920x1080"
+        imageAlt="Construction site"
+        ctaButton={{
+          text: "Schedule a Consultation",
+          href: "#contact"
+        }}
+      />
 
       {/* What is EOS? */}
-      <section className="container">
+      <section className="container py-20">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <h2 className="text-3xl font-bold architectural-title">What is EOS?</h2>
@@ -113,7 +101,7 @@ export default function EOSForContractors() {
       </section>
 
       {/* Our EOS Implementation Process */}
-      <section className="container">
+      <section className="container py-20">
         <h2 className="text-3xl font-bold architectural-title text-center mb-12">
           Our EOS Implementation Process
         </h2>
@@ -183,7 +171,7 @@ export default function EOSForContractors() {
       </section>
 
       {/* Testimonials */}
-      <section className="bg-secondary text-secondary-foreground py-20">
+      <section className="bg-muted text-secondary-foreground py-20">
         <div className="container">
           <h2 className="text-3xl font-bold architectural-title text-center mb-12">
             What General Contractors Say About EOS
@@ -226,7 +214,7 @@ export default function EOSForContractors() {
       </section>
 
       {/* FAQs */}
-      <section className="container">
+      <section className="container py-20">
         <h2 className="text-3xl font-bold architectural-title text-center mb-12">
           Frequently Asked Questions
         </h2>

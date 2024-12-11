@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { Mail, Phone, Clock, MapPin, Linkedin } from 'lucide-react'
+import { Mail, Phone, Clock, Linkedin } from 'lucide-react'
 
 export default function Contact() {
   return (
@@ -10,9 +10,9 @@ export default function Contact() {
       {/* Header */}
       <section className="container">
         <div className="max-w-[800px] mx-auto text-center space-y-8">
-          <h1 className="text-4xl font-bold tracking-tighter">We're Here to Help You Succeed</h1>
+          <h1 className="text-4xl font-bold tracking-tighter">We&apos;re Here to Help You Succeed</h1>
           <p className="text-lg text-muted-foreground">
-            Whether you're navigating CALGreen requirements or looking to optimize your business with EOS, our team is ready to assist. Reach out to start your journey toward sustainability and efficiency.
+            Whether you&apos;re navigating CALGreen requirements or looking to optimize your business with EOS, our team is ready to assist. Reach out to start your journey toward sustainability and efficiency.
           </p>
         </div>
       </section>
@@ -101,7 +101,7 @@ export default function Contact() {
       {/* Final CTA */}
       <section className="container">
         <div className="text-center space-y-8">
-          <h2 className="text-3xl font-bold tracking-tighter">Let's Build Something Amazing Together</h2>
+          <h2 className="text-3xl font-bold tracking-tighter">Let&apos;s Build Something Amazing Together</h2>
           <Button size="lg" asChild>
             <a href="#contact-form">Contact Us Now</a>
           </Button>
@@ -110,4 +110,3 @@ export default function Contact() {
     </div>
   )
 }
-

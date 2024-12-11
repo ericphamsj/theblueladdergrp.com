@@ -25,17 +25,17 @@ export default function About() {
               </h2>
               <div className="space-y-4 text-lg text-muted-foreground">
                 <p>
-                  Faith's journey began as a third-generation builder, focusing on alternative building methods and off-grid construction.
+                  Faith&apos;s journey began as a third-generation builder, focusing on alternative building methods and off-grid construction.
                 </p>
                 <p>
                   Her expertise spans high-end residential projects, heavy civil construction, and commercial tenant improvements.
                 </p>
                 <p>
-                  Faith's passion lies in saving the planet one project at a time and transforming businesses into efficient, sustainable enterprises.
+                  Faith&apos;s passion lies in saving the planet one project at a time and transforming businesses into efficient, sustainable enterprises.
                 </p>
               </div>
               <blockquote className="border-l-4 border-primary pl-4 italic text-xl">
-                "I am deeply committed to finding solutions to the most complicated building and code issues."
+                &quot;I am deeply committed to finding solutions to the most complicated building and code issues.&quot;
               </blockquote>
             </div>
             <div className="relative h-[600px] rounded-lg overflow-hidden">
@@ -184,4 +184,3 @@ export default function About() {
     </div>
   )
 }
-

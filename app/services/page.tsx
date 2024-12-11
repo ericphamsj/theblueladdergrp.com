@@ -102,14 +102,14 @@ export default function Services() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <p className="text-lg">
-                We're committed to promoting sustainable building practices that benefit both the environment and your bottom line. Our expertise includes:
+                We&apos;re committed to promoting sustainable building practices that benefit both the environment and your bottom line. Our expertise includes:
               </p>
               <ul className="space-y-4">
                 <li className="flex items-start gap-2">
                   <CheckCircle className="h-5 w-5 text-primary mt-1" />
                   <div>
                     <h3 className="font-semibold">Energy Efficiency Consulting</h3>
-                    <p>Optimize your building's energy performance and reduce operational costs.</p>
+                    <p>Optimize your building&apos;s energy performance and reduce operational costs.</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-2">

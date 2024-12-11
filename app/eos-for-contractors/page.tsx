@@ -264,7 +264,7 @@ export default function EOSForContractors() {
             Ready to Transform Your Construction Business?
           </h2>
           <p className="text-xl max-w-[600px] mx-auto">
-            Let's discuss how EOS can help you achieve your goals and take your company to the next level.
+            Let&apos;s discuss how EOS can help you achieve your goals and take your company to the next level.
           </p>
           <Button size="lg" variant="secondary" asChild>
             <Link href="/contact">Schedule Your Free Consultation</Link>

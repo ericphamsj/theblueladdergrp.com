@@ -275,7 +275,7 @@ export default function Home() {
         <div className="container relative">
           <div className="max-w-[600px] mx-auto text-center space-y-8">
             <h2 className="text-3xl md:text-4xl font-bold architectural-title">
-              Let's Build a Sustainable Future Together
+              Let&apos;s Build a Sustainable Future Together
             </h2>
             <p className="text-lg text-muted-foreground">
               Contact us today to schedule a consultation for CALGreen services or EOS solutions.

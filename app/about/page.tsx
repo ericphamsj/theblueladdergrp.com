@@ -5,13 +5,36 @@ import { Card, CardContent } from "@/components/ui/card"
 import { CheckCircle } from 'lucide-react'
 import { PageHero } from "@/components/page-hero"
 
+const certifications = [
+  {
+    title: "CGBP Certified",
+    description: "Certified green building professional since 2008.",
+    image: "/build-it-green.png"
+  },
+  {
+    title: "ICC Certified",
+    description: "CALGreen Certified Plans Examiner and site inspector.",
+    image: "/icc-certified.png"
+  },
+  {
+    title: "EOS Expert",
+    description: "Certified EOS Integrator and Masterclass Graduate",
+    image: "/eos-graduate.png"
+  },
+  {
+    title: "Licensed Contractor",
+    description: "Obtained CSLB - B License, 2010",
+    image: "/cslb.png"
+  }
+]
+
 export default function About() {
   return (
     <div className="flex flex-col">
       <PageHero
         title="Faith Mackarness: A Leader in Green Construction"
-        description="Third-generation builder committed to sustainable construction and business excellence"
-        image="https://placehold.co/1920x1080"
+        description="Third-generation builder committed to sustainable construction and business excellence."
+        image="/about.jpg"
         imageAlt="Sustainable construction project"
       />
 
@@ -25,22 +48,19 @@ export default function About() {
               </h2>
               <div className="space-y-4 text-lg text-muted-foreground">
                 <p>
-                  Faith&apos;s journey began as a third-generation builder, focusing on alternative building methods and off-grid construction.
+                  Faith began her &lsquo;Green&rsquo; journey with the first Living Machine project in Taos, New Mexico, working alongside the now, Worrell Waters Technologies. She drew immense inspiration from Tom Worrell and Michael Reynolds - the visionary inventor and founder of EarthShip Biotecture. These two brilliant minds sparked Faith's passion for sustainable living. Her academic pursuit of alternative building methods at the University of New Mexico further ignited her desire to live off-grid and apply her knowledge in real-world settings. From the remote mesas of New Mexico to the rugged northern Cascade Mountains of Washington, Faith thrived in off-grid environments. Her determination was further strengthened through her role as a Timber Stand Surveyor for the USDA Forest Service, where she conducted field surveys, counted spotted owls, and battled the occasional forest fire.
                 </p>
                 <p>
-                  Her expertise spans high-end residential projects, heavy civil construction, and commercial tenant improvements.
-                </p>
-                <p>
-                  Faith&apos;s passion lies in saving the planet one project at a time and transforming businesses into efficient, sustainable enterprises.
+                  After settling down in her home state of California in 2000, Faith has continued to fuel her passion for knowledge and commitment to sustainable living. Throughout her career, her primary goals have been to work alongside her children and promote green practices. This May, her daughter will graduate from the Interior Design program at WVMC, marking a milestone in the Mackarness family's legacy. With this achievement, the fourth generation of the Mackarness clan will be firmly rooted in the building industry, dedicated to advancing environmentally conscious and sustainable building practices.
                 </p>
               </div>
               <blockquote className="border-l-4 border-primary pl-4 italic text-xl">
-                &quot;I am deeply committed to finding solutions to the most complicated building and code issues.&quot;
+                &quot;Where homeowners and contractors often feel frustrated by tier confusion, mandatory electives, and constant updates, I thrive on the challenges of CALGreen Code. For me, these hurdles are exciting opportunities to bring clarity and solutions to our clients.&quot;
               </blockquote>
             </div>
             <div className="relative h-[600px] rounded-lg overflow-hidden">
               <Image
-                src="https://placehold.co/800x600"
+                src="/faith-5.jpeg"
                 alt="Faith Mackarness at work"
                 fill
                 className="object-cover"
@@ -52,42 +72,41 @@ export default function About() {
 
       {/* Certifications */}
       <section className="py-20 bg-muted">
-        <div className="container">
-          <h2 className="text-3xl font-bold architectural-title text-center mb-12">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-12">
             Certifications and Expertise
           </h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              {
-                title: "CGBP Certified",
-                description: "Certified Green Building Professional with 16+ years of experience"
-              },
-              {
-                title: "ICC Certified",
-                description: "Plans Examiner and Inspector with comprehensive code knowledge"
-              },
-              {
-                title: "EOS Expert",
-                description: "Masterclass Graduate and Certified Integrator"
-              },
-              {
-                title: "Licensed Contractor",
-                description: "General Contractor since 2010 with hands-on experience"
-              }
-            ].map((cert, index) => (
-              <Card key={index} className="relative overflow-hidden">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {certifications.map((cert, index) => (
+              <div
+                key={index}
+                className="relative bg-white shadow-lg rounded-lg overflow-hidden"
+              >
                 <div className="absolute top-0 left-0 w-1 h-full bg-primary" />
-                <CardContent className="p-6 space-y-2">
-                  <h3 className="font-bold">{cert.title}</h3>
-                  <p className="text-sm text-muted-foreground">{cert.description}</p>
-                </CardContent>
-              </Card>
+                <div className="p-6 space-y-4">
+                  <div className="h-32 w-32 mx-auto flex items-center justify-center">
+                    <Image
+                      src={cert.image}
+                      alt={`${cert.title} certification`}
+                      width={100}
+                      height={100}
+                      className="object-contain"
+                      style={{ maxWidth: '100px', maxHeight: '100px' }}
+                    />
+                  </div>
+                  <h3 className="text-lg font-bold text-center">{cert.title}</h3>
+                  <p className="text-sm text-muted-foreground text-center">
+                    {cert.description}
+                  </p>
+                </div>
+              </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Mission and Values */}
+
+      {/* Mission and Values 
       <section className="py-20">
         <div className="container">
           <div className="max-w-[800px] mx-auto text-center space-y-12">
@@ -122,10 +141,10 @@ export default function About() {
             </div>
           </div>
         </div>
-      </section>
+      </section>*/}
 
       {/* Differentiators */}
-      <section className="py-20 bg-muted text-secondary-foreground">
+      <section className="py-20 text-secondary-foreground">
         <div className="container">
           <h2 className="text-3xl font-bold architectural-title text-center mb-12">
             What Sets Us Apart
@@ -134,15 +153,15 @@ export default function About() {
             {[
               {
                 title: "Direct Communication",
-                description: "Faith answers your calls and provides clear, actionable solutions"
+                description: "Faith answers your calls faster than your mom texts back, and she’s got solutions so clear even your pet goldfish would get it."
               },
               {
                 title: "Expert Network",
-                description: "Access to an extensive network of ethical, qualified subcontractors and providers"
+                description: "We’ve got a Rolodex of ethical, qualified pros so big it could moonlight as the Yellow Pages—minus the outdated hairstyles."
               },
               {
                 title: "Passionate Advocacy",
-                description: "Making green building and business success accessible to everyone"
+                description: "We’re on a mission to make green building so accessible, even your neighbor’s cat could start a sustainable side hustle."
               }
             ].map((point, index) => (
               <Card key={index} className="bg-background text-foreground">
@@ -164,14 +183,14 @@ export default function About() {
       {/* CTA */}
       <section className="relative py-20">
         <Image
-          src="https://placehold.co/1920x600"
+          src="/trees.jpeg"
           alt="Sustainable construction project"
           fill
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/95 to-background/80" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/95 to-background/80 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10" />
         <div className="container relative">
-          <div className="max-w-[600px] mx-auto text-center space-y-8">
+          <div className="max-w-[600px] mx-auto text-center space-y-8 text-white">
             <h2 className="text-3xl font-bold architectural-title">
               Discover How We Can Help You
             </h2>

@@ -23,14 +23,14 @@ export function PageHero({ title, description, image, imageAlt, ctaButton }: Pag
         className="object-cover"
         priority
       />
-      <div className="absolute inset-0 bg-gradient-to-r from-background/95 to-background/50" />
+      <div className="absolute inset-0 bg-gradient-to-r from-green-900/50 to-green-800/50 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-100" />
       <div className="container relative">
         <div className="max-w-[800px] space-y-8">
-          <h1 className="text-5xl md:text-6xl font-bold architectural-title">
+          <h1 className="text-5xl md:text-6xl font-bold architectural-title text-white">
             {title}
           </h1>
           {description && (
-            <p className="text-xl md:text-2xl text-muted-foreground">
+            <p className="text-xl md:text-2xl text-muted">
               {description}
             </p>
           )}

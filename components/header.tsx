@@ -22,8 +22,9 @@ export function Header() {
       <div className="container relative flex items-center justify-between py-4">
         <div className="w-[250px] sm:w-[300px]">
           <Link href="/" className="flex items-center gap-2 font-medium uppercase architectural-title text-accent">
-            <Image src="/logo.png" alt="The Blue Ladder Group Logo" width={78} height={78} className="w-[50px] h-[50px] sm:w-[78px] sm:h-[78px]" />
-            <span className="text-sm sm:text-base">The Blue Ladder Group</span>
+            {/* <Image src="/logo.png" alt="The Blue Ladder Group Logo" width={78} height={78} className="w-[50px] h-[50px] sm:w-[78px] sm:h-[78px]" />
+            <span className="text-sm sm:text-base">The Blue Ladder Group</span> */}
+            <Image src="/theblueladdergroup-logo.png" alt="The Blue Ladder Group Logo" width={600} height={160} quality={100} />
           </Link>
         </div>
 

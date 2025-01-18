@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Linkedin } from 'lucide-react'
+import { Linkedin } from 'lucide-react';
 
 export function Footer() {
   return (
@@ -51,7 +51,7 @@ export function Footer() {
             <h4 className="font-semibold mb-4 opacity-90">Contact</h4>
             <div className="space-y-2 text-sm opacity-75">
               <p>Monday – Friday</p>
-              <p>9 AM – 5 PM PST</p>
+              <p>7 AM – 6 PM PST</p>
               <p className="hover:text-[#8DC63F] transition-colors">
                 <a href="mailto:Faith@TheBlueLadderGrp.com">Faith@TheBlueLadderGrp.com</a>
               </p>

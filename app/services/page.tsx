@@ -10,7 +10,7 @@ export default function Services() {
     <div className="flex flex-col">
       <PageHero
         title="Comprehensive Solutions for a Greener Future"
-        image="https://placehold.co/1920x1080"
+        image="/services.jpg"
         imageAlt="Sustainable building practices"
         description="At The Blue Ladder Group, we specialize in CALGreen compliance, business optimization, and sustainable building practices, helping construction professionals achieve sustainability and efficiency."
       />
@@ -22,65 +22,29 @@ export default function Services() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                title: "Inspections and Plans Examinations",
-                description: "Ensure your projects fully comply with California Green Building Standards (CALGreen). We simplify the compliance process, making sure your documentation and construction practices meet the necessary codes."
+                title: "CALGreen Inspections and Plans Examinations",
+                description: `The Blue Ladder Group ensures your projects meet all CALGreen Building Code requirements. We streamline the compliance process by crafting and certifying building documents tailored to your municipality's standards and ensuring "FINAL PASS".`
               },
               {
-                title: "Construction Waste Management Plans",
-                description: "Streamline your waste tracking and reporting with tailored CWMP solutions to maximize recycling efforts and meet green requirements."
+                title: "Construction Waste Management Plans & Green Halo Assistance",
+                description: "Streamline your waste tracking and reporting with tailored CWMP solutions to maximize recycling efforts and meet green requirements. Making waste diversion Compliance and reporting easy for your team."
               },
               {
-                title: "Green Halo Assistance",
-                description: "Leverage our expertise to navigate the Green Halo platform, making waste diversion compliance and reporting easy for your team."
+                title: "Green Point Rating",
+                description: `The Blue Ladder Group can assess and verify whether your project meets the standards of the "GreenPoint Rated" system.`
               },
               {
-                title: "360° Photo Documentation",
-                description: "Gain access to detailed photo documentation at critical construction stages to ensure compliance and quality control."
+                title: "Lidar & 360 Photo Documentation",
+                description: `Don’t miss the opportunity to permanently capture MEP placement and eliminate the guesswork of what’s behind the drywall. LiDAR’s immersive photos provide a lasting reference for maintenance and repairs throughout the structure’s lifetime.`
               },
               {
                 title: "Green Product Sourcing",
-                description: "Identify eco-friendly building materials that align with your project's sustainability goals."
+                description: `Identify eco-friendly materials that align with your projects sustainability goals and "Mandatory Measures" requirements.`
               },
-              {
-                title: "CALGreen Commissioning",
-                description: "Comprehensive commissioning services to verify that building systems are designed, installed, and performing as intended to meet CALGreen requirements."
-              }
-            ].map((service, index) => (
-              <Card key={index}>
-                <CardHeader>
-                  <CardTitle>{service.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p>{service.description}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* EOS Services */}
-      <section className="container py-20" id="eos">
-        <div className="space-y-12">
-          <h2 className="text-3xl font-bold tracking-tighter text-center">Streamline and Scale Your Construction Business</h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            {[
-              {
-                title: "Process Optimization",
-                description: "We analyze your current workflows and streamline operations, reducing inefficiencies and freeing your team to focus on critical tasks."
-              },
-              {
-                title: "Team Building and Alignment",
-                description: "With EOS principles, we align your team to work toward shared goals, ensuring the right people are in the right roles."
-              },
-              {
-                title: "Cultural Transformation",
-                description: "Build a company culture of clarity, accountability, and excitement. Let your team thrive in an environment designed for success."
-              },
-              {
-                title: "Long-Term Strategy Implementation",
-                description: "Partner with us to define a vision and implement scalable strategies for sustainable growth."
-              }
+              // {
+              //   title: "CALGreen Commissioning",
+              //   description: "Comprehensive commissioning services to verify that building systems are designed, installed, and performing as intended to meet CALGreen requirements."
+              // }
             ].map((service, index) => (
               <Card key={index}>
                 <CardHeader>
@@ -137,10 +101,10 @@ export default function Services() {
             </div>
             <div className="relative h-[500px]">
               <Image
-                src="https://placehold.co/800x1000"
+                src="/bulb.png"
                 alt="Sustainable building practices"
                 fill
-                className="object-cover rounded-lg"
+                className="object-cover object-center rounded-lg"
               />
             </div>
           </div>
@@ -153,16 +117,16 @@ export default function Services() {
         <div className="grid md:grid-cols-3 gap-8 max-w-[1000px] mx-auto">
           {[
             {
-              title: "Initial Consultation",
-              description: "A detailed discussion to understand your unique needs—whether it's CALGreen compliance, EOS implementation, or sustainable building practices."
+              title: "Introduction",
+              description: "Send The Blue Ladder Group your construction documents and a brief description of the project. We will immediately follow up with a written proposal."
             },
             {
-              title: "Customized Plan",
-              description: "Develop tailored solutions to meet your goals efficiently and effectively, considering both regulatory requirements and business objectives."
+              title: "Field Inspection",
+              description: "Ideally there are three field inspections; Site before demolition, interior before all trades, and final."
             },
             {
-              title: "Ongoing Support",
-              description: "Continued guidance to ensure success long after implementation, including regular check-ins and updates on changing regulations."
+              title: "Final Certification",
+              description: "Upon completion of the final CALGreen inspection, The Blue Ladder Group will certify and stamp your plans, then prepare all necessary documents for municipal submission on a permanent flash drive."
             }
           ].map((step, index) => (
             <Card key={index}>
@@ -194,18 +158,6 @@ export default function Services() {
               {
                 title: "Homeowners",
                 description: "Navigate green building requirements for your new construction or renovation project."
-              },
-              {
-                title: "Municipalities",
-                description: "Partner with us to promote and enforce sustainable building practices in your community."
-              },
-              {
-                title: "Commercial Developers",
-                description: "Maximize the value and sustainability of your commercial projects."
-              },
-              {
-                title: "Subcontractors",
-                description: "Align your services with CALGreen requirements and sustainable building trends."
               }
             ].map((audience, index) => (
               <Card key={index} className="bg-background text-foreground">

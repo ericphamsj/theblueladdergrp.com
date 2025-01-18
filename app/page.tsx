@@ -4,6 +4,29 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { CheckCircle, ArrowRight } from 'lucide-react'
 
+const testimonials = [
+  {
+    quote: "Faith's quiet brilliance, her sense of calm and helpful nature made an immediate difference when she joined our team. Her knowledge base is deep in best practices for both residential construction and accounting, plus her skills in management quickly took us to the next level. Plus, she's funny and a fabulous listener.",
+    author: "Ginny Schaefer",
+    role: "Estimator"
+  },
+  {
+    quote: "As one of the founding owners of MCB, a multimillion-dollar general building corporation, I want to give a huge shout-out to Faith for the invaluable construction, business knowledge and expertise she brought to help our company grow. MCB was built on the EOS operating system, and we were fully committed to its complete implementation. Faith served as our EOS Integrator, leading both our weekly Leadership meetings as well as our Production L-10's. What truly makes Faith an all-star is her ability to strike the perfect balance between joyful enthusiasm and the meticulous task management and accountability required in a busy construction company. She brings energy and inspiration through the many challenges of day-to-day operations. It takes a serious driver to ensure that every issue is addressed, and that is what Faith is, a driver. She is an incredible asset to any team!",
+    author: "Tom Collins",
+    role: "General Contractor"
+  },
+  {
+    quote: "Faith is the consummate EOS Integrator: strategic thinker, financial wizard, organized, able to keep a pulse on all aspects of the business. Hiring her as a fractional Integrator can make a huge impact on how you run your business. Make the call!",
+    author: "Emily Ransone",
+    role: "Certified EOS Implementer® at EOS Worldwide"
+  },
+  {
+    quote: "I appreciate Faith's forward-thinking and matter-of-fact approach when evaluating construction projects and executive decisions. Her energy and insight are refreshing and come from her extensive background working through complicated code issues throughout her career. She is a futuristic thinker, as well as a strong supporter of the CALGreen community and industry!",
+    author: "Larry Cochran",
+    role: "Project Manager"
+  }
+]
+
 export default function Home() {
   return (
     <div className="flex flex-col">
@@ -16,18 +39,18 @@ export default function Home() {
           className="object-cover object-bottom"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-green-900/60 to-green-800/60" />
+        <div className="absolute inset-0 bg-gradient-to-r from-green-900/60 to-green-800/60 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10" />
         <div className="container relative">
-          <div className="max-w-[900px] space-y-8 text-white text-center mx-auto">
+          <div className="max-w-3xl space-y-8 text-white text-center mx-auto">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-light architectural-title">
               Elevating Construction Through Sustainability
             </h1>
-            <p className="text-xl font-light md:text-2xl">
-              Expert CALGreen Inspections, EOS Solutions, and Sustainable Building Practices
+            <p className="text-xl font-base md:text-2xl">
+              Expert CALGreen Inspections and Plans Examiners, EOS Integrator Services, and Sustainable Building Practices.
             </p>
             <div className="flex items-center justify-center flex-col sm:flex-row gap-4">
               <Button size="lg" asChild>
-                <Link href="/contact">Get Started Today</Link>
+                <Link href="mailto:Faith@TheBlueLadderGrp.com">Get Started Today</Link>
               </Button>
               <Button size="lg" variant="outline" asChild>
                 <Link href="/services">Explore Services</Link>
@@ -44,18 +67,18 @@ export default function Home() {
             {[
               {
                 title: "CALGreen Expert",
-                description: "Certified ICC CALGreen Inspector/Plans Examiner with over 20 years of experience",
-                image: "https://placehold.co/600x400"
+                description: "Certified ICC CALGreen Inspector/Plans Examiner with over 20 years of experience in Commercial and Residential Construction.",
+                image: "/calgreen.png"
               },
               {
                 title: "Sustainable Building",
-                description: "Expert guidance in green building practices and environmental compliance",
-                image: "https://placehold.co/600x400"
+                description: "Expert guidance in green building practices as a CGBP, Certified Green Building Professional since 2008.",
+                image: "/faith.jpg"
               },
               {
-                title: "EOS Solutions",
+                title: "Entrepreneurial Operating System (EOS)",
                 description: "Transform your construction business with proven operational excellence strategies",
-                image: "https://placehold.co/600x400"
+                image: "/eos.png"
               }
             ].map((feature, index) => (
               <Card key={index} className="overflow-hidden">
@@ -64,12 +87,12 @@ export default function Home() {
                     src={feature.image}
                     alt={feature.title}
                     fill
-                    className="object-cover"
+                    className="object-cover object-fit"
                   />
                 </div>
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold mb-2">{feature.title}</h3>
-                  <p className="text-muted-foreground">{feature.description}</p>
+                  <p className="text-muted-foreground text-md">{feature.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -81,12 +104,12 @@ export default function Home() {
       <section className="py-20 bg-muted">
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="relative h-[600px]">
+            <div className="relative h-[700px]">
               <Image
-                src="https://placehold.co/800x600"
+                src="/faith-4.jpg"
                 alt="Faith Mackarness"
                 fill
-                className="object-cover rounded-lg"
+                className="object-cover object-bottom rounded-lg"
               />
             </div>
             <div className="space-y-6">
@@ -139,10 +162,10 @@ export default function Home() {
                   "Construction Waste Management",
                   "Green Halo System Support"
                 ],
-                image: "https://placehold.co/800x600"
+                image: "/2022-calgreen-code.png"
               },
               {
-                title: "EOS Implementation",
+                title: "Fractional EOS Integrator",
                 description: "Transform your construction business operations",
                 features: [
                   "Business Process Optimization",
@@ -150,7 +173,7 @@ export default function Home() {
                   "Strategic Planning",
                   "Performance Metrics"
                 ],
-                image: "https://placehold.co/800x600"
+                image: "/eos-2.png"
               }
             ].map((service, index) => (
               <Card key={index} className="overflow-hidden">
@@ -215,10 +238,10 @@ export default function Home() {
             </div>
             <div className="relative h-[400px]">
               <Image
-                src="https://placehold.co/600x400"
+                src="/2022-codes.png"
                 alt="CALGreen Code Book"
                 fill
-                className="object-cover rounded-lg"
+                className="object-cover object-top rounded-lg"
               />
             </div>
           </div>
@@ -227,38 +250,40 @@ export default function Home() {
 
       {/* Testimonials */}
       <section className="py-20 bg-white text-secondary-foreground">
-        <div className="container">
+        <div className="container px-4 md:px-6">
           <h2 className="text-3xl md:text-4xl font-bold architectural-title text-center mb-12">
             What Our Clients Say
           </h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                author: "Marcus Aurelius",
-                role: "Project Manager"
-              },
-              {
-                quote: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-                author: "Julia Domna",
-                role: "Development Director"
-              },
-              {
-                quote: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-                author: "Lucius Seneca",
-                role: "Construction Executive"
-              }
-            ].map((testimonial, index) => (
-              <Card key={index} className="bg-background text-foreground">
-                <CardContent className="p-6 space-y-4">
-                  <p className="italic">{testimonial.quote}</p>
-                  <div>
-                    <p className="font-semibold">{testimonial.author}</p>
-                    <p className="text-sm text-muted-foreground">{testimonial.role}</p>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
+          <div className="grid lg:grid-cols-2 gap-8">
+            {/* Left column */}
+            <div className="grid gap-8">
+              {[testimonials[1], testimonials[2]].map((testimonial, index) => (
+                <Card key={index} className="bg-background text-foreground">
+                  <CardContent className="p-6 flex flex-col h-full justify-between">
+                    <p className="italic flex-grow">{testimonial.quote}</p>
+                    <div className="mt-4">
+                      <p className="font-semibold">{testimonial.author}</p>
+                      <p className="text-sm text-muted-foreground">{testimonial.role}</p>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+
+            {/* Right column */}
+            <div className="grid gap-8">
+              {[testimonials[0], testimonials[3]].map((testimonial, index) => (
+                <Card key={index} className="bg-background text-foreground">
+                  <CardContent className="p-6 flex flex-col h-full justify-between">
+                    <p className="italic flex-grow">{testimonial.quote}</p>
+                    <div className="mt-4">
+                      <p className="font-semibold">{testimonial.author}</p>
+                      <p className="text-sm text-muted-foreground">{testimonial.role}</p>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -266,21 +291,21 @@ export default function Home() {
       {/* CTA Section */}
       <section className="relative py-20">
         <Image
-          src="https://placehold.co/1920x600"
+          src="/trees.jpeg"
           alt="Sustainable construction"
           fill
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/95 to-background/80" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/95 to-background/80 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10" />
         <div className="container relative">
-          <div className="max-w-[600px] mx-auto text-center space-y-8">
-            <h2 className="text-3xl md:text-4xl font-bold architectural-title">
+          <div className="max-w-3xl mx-auto text-center space-y-8">
+            <h2 className="text-3xl md:text-4xl font-bold text-white">
               Let&apos;s Build a Sustainable Future Together
             </h2>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-lg text-white">
               Contact us today to schedule a consultation for CALGreen services or EOS solutions.
             </p>
-            <Button size="lg" asChild>
+            <Button variant="outline" size="lg" asChild>
               <Link href="/contact">Schedule a Consultation</Link>
             </Button>
           </div>

@@ -11,7 +11,7 @@ export default function EOSForContractors() {
       <PageHero
         title="EOS Solutions for General Contractors"
         description="Transform your construction business with the Entrepreneurial Operating System"
-        image="https://placehold.co/1920x1080"
+        image="/eos-hero.jpg"
         imageAlt="Construction site"
         ctaButton={{
           text: "Schedule a Consultation",
@@ -28,33 +28,71 @@ export default function EOSForContractors() {
               The Entrepreneurial Operating System (EOS) is a complete set of simple concepts and practical tools that has helped thousands of entrepreneurs get what they want from their businesses.
             </p>
             <ul className="space-y-2">
-              {[
-                "Align your team with a shared vision",
-                "Gain traction through disciplined execution",
-                "Build a healthy, functional, and cohesive leadership team",
-                "Solve issues permanently",
-                "Establish clear accountability",
-                "Scale your business effectively"
-              ].map((point, index) => (
-                <li key={index} className="flex items-center gap-2">
-                  <CheckCircle className="h-5 w-5 text-primary" />
-                  <span>{point}</span>
-                </li>
-              ))}
+              {
+                ["Align your team with a shared vision and clear goals",
+                  "Ensure the right people are in the right seats for success",
+                  "Use data-driven metrics to track progress and performance",
+                  "Solve issues permanently through a structured process",
+                  "Document and follow core processes consistently",
+                  "Gain traction with disciplined execution and accountability"
+                ].map((point, index) => (
+                  <li key={index} className="flex items-center gap-2">
+                    <CheckCircle className="h-5 w-5 text-primary" />
+                    <span>{point}</span>
+                  </li>
+                ))}
             </ul>
           </div>
           <div className="relative h-[400px]">
             <Image
-              src="https://placehold.co/800x800"
+              src="/what-is-eos.png"
               alt="EOS Components"
               fill
-              className="object-cover rounded-lg"
+              className="object-contain rounded-lg"
             />
           </div>
         </div>
       </section>
 
-      {/* EOS for Construction */}
+      {/* EOS Services */}
+      <section className="bg-muted py-20" id="eos">
+        <div className="container">
+          <div className="space-y-12">
+            <h2 className="text-3xl font-bold tracking-tighter text-center">Streamline and Scale Your Construction Business</h2>
+            <div className="grid md:grid-cols-2 gap-8">
+              {[
+                {
+                  title: "Process Optimization",
+                  description: "We analyze your current workflows and streamline operations, reducing inefficiencies and freeing your team to focus on critical tasks."
+                },
+                {
+                  title: "Team Building and Alignment",
+                  description: "With EOS principles, we align your team to work toward shared goals, ensuring the right people are in the right roles."
+                },
+                {
+                  title: "Cultural Transformation",
+                  description: "Build a company culture of clarity, accountability, and excitement. Let your team thrive in an environment designed for success."
+                },
+                {
+                  title: "Long-Term Strategy Implementation",
+                  description: "Partner with us to define a vision and implement scalable strategies for sustainable growth."
+                }
+              ].map((service, index) => (
+                <Card key={index}>
+                  <CardHeader>
+                    <CardTitle>{service.title}</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p>{service.description}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* EOS for Construction 
       <section className="bg-muted py-20">
         <div className="container">
           <h2 className="text-3xl font-bold architectural-title text-center mb-12">
@@ -98,9 +136,9 @@ export default function EOSForContractors() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
-      {/* Our EOS Implementation Process */}
+      {/* Our EOS Implementation Process
       <section className="container py-20">
         <h2 className="text-3xl font-bold architectural-title text-center mb-12">
           Our EOS Implementation Process
@@ -168,9 +206,9 @@ export default function EOSForContractors() {
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
 
-      {/* Testimonials */}
+      {/* Testimonials 
       <section className="bg-muted text-secondary-foreground py-20">
         <div className="container">
           <h2 className="text-3xl font-bold architectural-title text-center mb-12">
@@ -211,9 +249,9 @@ export default function EOSForContractors() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
-      {/* FAQs */}
+      {/* FAQs 
       <section className="container py-20">
         <h2 className="text-3xl font-bold architectural-title text-center mb-12">
           Frequently Asked Questions
@@ -255,7 +293,7 @@ export default function EOSForContractors() {
             </Card>
           ))}
         </div>
-      </section>
+      </section> */}
 
       {/* CTA */}
       <section className="bg-primary text-primary-foreground py-20" id="contact">

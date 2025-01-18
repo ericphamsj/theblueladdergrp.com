@@ -98,7 +98,7 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* Final CTA */}
+      {/* Final CTA 
       <section className="container">
         <div className="text-center space-y-8">
           <h2 className="text-3xl font-bold tracking-tighter">Let&apos;s Build Something Amazing Together</h2>
@@ -106,7 +106,7 @@ export default function Contact() {
             <a href="#contact-form">Contact Us Now</a>
           </Button>
         </div>
-      </section>
+      </section>*/}
     </div>
   )
 }

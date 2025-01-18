@@ -13,6 +13,10 @@ export default function Services() {
         image="/services.jpg"
         imageAlt="Sustainable building practices"
         description="At The Blue Ladder Group, we specialize in CALGreen compliance, business optimization, and sustainable building practices, helping construction professionals achieve sustainability and efficiency."
+        ctaButton={{
+          text: "Schedule a Consultation",
+          href: "/contact"
+        }}
       />
 
       {/* CALGreen Services */}
@@ -60,7 +64,7 @@ export default function Services() {
       </section>
 
       {/* Sustainable Building Practices */}
-      <section className="bg-muted py-20" id="sustainable-practices">
+      <section className="py-20" id="sustainable-practices">
         <div className="container">
           <h2 className="text-3xl font-bold tracking-tighter text-center mb-12">Sustainable Building Practices</h2>
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -99,7 +103,7 @@ export default function Services() {
                 </li>
               </ul>
             </div>
-            <div className="relative h-[500px]">
+            <div className="relative h-[400px] lg:h-[500px]">
               <Image
                 src="/bulb.png"
                 alt="Sustainable building practices"
@@ -112,37 +116,39 @@ export default function Services() {
       </section>
 
       {/* Our Process */}
-      <section className="container py-20">
-        <h2 className="text-3xl font-bold tracking-tighter text-center mb-12">How We Work Together</h2>
-        <div className="grid md:grid-cols-3 gap-8 max-w-[1000px] mx-auto">
-          {[
-            {
-              title: "Introduction",
-              description: "Send The Blue Ladder Group your construction documents and a brief description of the project. We will immediately follow up with a written proposal."
-            },
-            {
-              title: "Field Inspection",
-              description: "Ideally there are three field inspections; Site before demolition, interior before all trades, and final."
-            },
-            {
-              title: "Final Certification",
-              description: "Upon completion of the final CALGreen inspection, The Blue Ladder Group will certify and stamp your plans, then prepare all necessary documents for municipal submission on a permanent flash drive."
-            }
-          ].map((step, index) => (
-            <Card key={index}>
-              <CardHeader>
-                <CardTitle>{step.title}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p>{step.description}</p>
-              </CardContent>
-            </Card>
-          ))}
+      <section className="bg-muted py-20">
+        <div className="container">
+          <h2 className="text-3xl font-bold tracking-tighter text-center mb-12">How We Work Together</h2>
+          <div className="grid md:grid-cols-3 gap-8 max-w-[1000px] mx-auto">
+            {[
+              {
+                title: "Introduction",
+                description: "Send The Blue Ladder Group your construction documents and a brief description of the project. We will immediately follow up with a written proposal."
+              },
+              {
+                title: "Field Inspection",
+                description: "Ideally there are three field inspections; Site before demolition, interior before all trades, and final."
+              },
+              {
+                title: "Final Certification",
+                description: "Upon completion of the final CALGreen inspection, The Blue Ladder Group will certify and stamp your plans, then prepare all necessary documents for municipal submission on a permanent flash drive."
+              }
+            ].map((step, index) => (
+              <Card key={index}>
+                <CardHeader>
+                  <CardTitle>{step.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p>{step.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
         </div>
       </section>
 
       {/* Target Audience Section */}
-      <section className="bg-muted text-secondary-foreground py-20">
+      <section className="text-secondary-foreground py-20">
         <div className="container">
           <h2 className="text-3xl font-bold tracking-tighter text-center mb-12">Who We Serve</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -173,13 +179,27 @@ export default function Services() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="container py-20">
-        <div className="text-center space-y-8">
-          <h2 className="text-3xl font-bold tracking-tighter">Ready to Build Smarter and Greener?</h2>
-          <Button size="lg" asChild className="max-w-[300px] whitespace-normal h-auto py-4">
-            <Link href="/contact">Schedule Your Service Consultation Today</Link>
-          </Button>
+      {/* CTA Section */}
+      <section className="relative py-20">
+        <Image
+          src="/trees.jpeg"
+          alt="Sustainable construction"
+          fill
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/95 to-background/80 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10" />
+        <div className="container relative">
+          <div className="max-w-3xl mx-auto text-center space-y-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-white font-light">
+              Ready to Build Smarter and Greener?
+            </h2>
+            <p className="text-lg text-white">
+              Contact us today to schedule a consultation for CALGreen services or EOS solutions.
+            </p>
+            <Button variant="outline" size="lg" asChild>
+              <Link href="/contact">Schedule a Consultation</Link>
+            </Button>
+          </div>
         </div>
       </section>
     </div>

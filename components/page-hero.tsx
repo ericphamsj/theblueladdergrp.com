@@ -15,7 +15,7 @@ interface PageHeroProps {
 
 export function PageHero({ title, description, image, imageAlt, ctaButton }: PageHeroProps) {
   return (
-    <section className="relative flex items-center" style={{ height: 'calc(100vh - 110px)' }}>
+    <section className="relative flex items-center h-[500px] min-h-[550px] lg:min-h-[650px] lg:min-h-[650px]">
       <Image
         src={image}
         alt={imageAlt}
@@ -24,13 +24,13 @@ export function PageHero({ title, description, image, imageAlt, ctaButton }: Pag
         priority
       />
       <div className="absolute inset-0 bg-gradient-to-r from-green-900/50 to-green-800/50 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-100" />
-      <div className="container relative">
-        <div className="max-w-[800px] space-y-8">
-          <h1 className="text-5xl md:text-6xl font-bold architectural-title text-white">
+      <div className="container relative mx-auto">
+        <div className="space-y-8 text-center text-white max-w-4xl mx-auto">
+          <h1 className="mx-auto text-5xl md:text-6xl font-light architectural-title">
             {title}
           </h1>
           {description && (
-            <p className="text-xl md:text-2xl text-muted">
+            <p className="mx-auto text-xl font-light md:text-2xl">
               {description}
             </p>
           )}

@@ -15,7 +15,7 @@ export default function EOSForContractors() {
         imageAlt="Construction site"
         ctaButton={{
           text: "Schedule a Consultation",
-          href: "#contact"
+          href: "/contact"
         }}
       />
 

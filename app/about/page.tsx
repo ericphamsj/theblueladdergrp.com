@@ -36,6 +36,10 @@ export default function About() {
         description="Third-generation builder committed to sustainable construction and business excellence."
         image="/about.jpg"
         imageAlt="Sustainable construction project"
+        ctaButton={{
+          text: "Schedule a Consultation",
+          href: "/contact"
+        }}
       />
 
       {/* Background */}
@@ -58,7 +62,7 @@ export default function About() {
                 &quot;Where homeowners and contractors often feel frustrated by tier confusion, mandatory electives, and constant updates, I thrive on the challenges of CALGreen Code. For me, these hurdles are exciting opportunities to bring clarity and solutions to our clients.&quot;
               </blockquote>
             </div>
-            <div className="relative h-[600px] rounded-lg overflow-hidden">
+            <div className="relative h-64 lg:h-[600px] rounded-lg overflow-hidden">
               <Image
                 src="/faith-5.jpeg"
                 alt="Faith Mackarness at work"
@@ -76,7 +80,7 @@ export default function About() {
           <h2 className="text-3xl font-bold text-center mb-12">
             Certifications and Expertise
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {certifications.map((cert, index) => (
               <div
                 key={index}

@@ -42,10 +42,10 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-r from-green-900/60 to-green-800/60 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10" />
         <div className="container relative">
           <div className="max-w-3xl space-y-8 text-white text-center mx-auto">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-light architectural-title">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-light architectural-title">
               Elevating Construction Through Sustainability
             </h1>
-            <p className="text-xl font-base md:text-2xl">
+            <p className="text-xl font-light md:text-2xl">
               Expert CALGreen Inspections and Plans Examiners, EOS Integrator Services, and Sustainable Building Practices.
             </p>
             <div className="flex items-center justify-center flex-col sm:flex-row gap-4">
@@ -104,7 +104,7 @@ export default function Home() {
       <section className="py-20 bg-muted">
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="relative h-[700px]">
+            <div className="relative h-[400px] lg:h-[700px]">
               <Image
                 src="/faith-4.jpg"
                 alt="Faith Mackarness"
@@ -177,7 +177,7 @@ export default function Home() {
               }
             ].map((service, index) => (
               <Card key={index} className="overflow-hidden">
-                <div className="relative h-64">
+                <div className="relative h-32 lg:h-64">
                   <Image
                     src={service.image}
                     alt={service.title}
@@ -236,7 +236,7 @@ export default function Home() {
                 <Link href="/services#calgreen">Learn More About CALGreen Services</Link>
               </Button>
             </div>
-            <div className="relative h-[400px]">
+            <div className="relative h-64 lg:h-[400px]">
               <Image
                 src="/2022-codes.png"
                 alt="CALGreen Code Book"

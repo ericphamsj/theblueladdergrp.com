@@ -63,15 +63,15 @@ export default function Contact() {
               <CardContent className="space-y-4">
                 <div className="flex items-center gap-2">
                   <Mail className="h-5 w-5 text-primary" />
-                  <p>contact@blueladdergroup.com</p>
+                  <p>Faith@TheBlueLadderGrp.com</p>
                 </div>
                 <div className="flex items-center gap-2">
                   <Phone className="h-5 w-5 text-primary" />
-                  <p>(555) 123-4567</p>
+                  <p>(408) 728-2287</p>
                 </div>
                 <div className="flex items-center gap-2">
                   <Clock className="h-5 w-5 text-primary" />
-                  <p>Monday – Friday, 9 AM – 5 PM PST</p>
+                  <p>Monday – Friday, 7 AM – 6 PM PST</p>
                 </div>
               </CardContent>
             </Card>
@@ -82,7 +82,7 @@ export default function Contact() {
               </CardHeader>
               <CardContent>
                 <div className="flex items-start gap-2">
-                  <p>Supporting architects, general contractors, homeowners, and municipalities with CALGreen and EOS services tailored to their needs across California.</p>
+                  <p>Supporting general contractors, architects, designers, and homeowners with CALGreen and EOS services tailored to their needs across San Francisco Bay Area.</p>
                 </div>
               </CardContent>
             </Card>

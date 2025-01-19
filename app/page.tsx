@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 const testimonials = [
   {
-    quote: "Faith's quiet brilliance, her sense of calm and helpful nature made an immediate difference when she joined our team. Her knowledge base is deep in best practices for both residential construction and accounting, plus her skills in management quickly took us to the next level. Plus, she's funny and a fabulous listener.",
+    quote: "Faith's quiet brilliance, her sense of calm and helpful nature made an immediate difference when she joined our team. Her knowledge base is deep in best practices for both residential construction and accounting. Her skills in management quickly took us to the next level. Plus, she's funny and a fabulous listener.",
     author: "Ginny Schaefer",
     role: "Estimator"
   },

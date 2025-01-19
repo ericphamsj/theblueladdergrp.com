@@ -4,6 +4,12 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { CheckCircle } from 'lucide-react'
 import { PageHero } from "@/components/page-hero"
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'EOS for Construction Businesses | Optimize & Grow',
+  description: 'Transform your construction business with EOS. Streamline processes, align your team, and achieve long-term success with expert implementation.',
+}
 
 export default function EOSForContractors() {
   return (

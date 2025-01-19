@@ -3,6 +3,12 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Mail, Phone, Clock, Linkedin } from 'lucide-react'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Contact The Blue Ladder Group | Get in Touch Today',
+  description: 'Reach out to us for expert CALGreen inspections and EOS solutions. Let’s discuss how we can help your construction business thrive sustainably.',
+}
 
 export default function Contact() {
   return (

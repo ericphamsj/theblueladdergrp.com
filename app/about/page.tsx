@@ -4,6 +4,12 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { CheckCircle } from 'lucide-react'
 import { PageHero } from "@/components/page-hero"
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'About The Blue Ladder Group | CALGreen & EOS Experts',
+  description: 'Learn about Faith Mackarness, a certified CALGreen Inspector and EOS expert with 20+ years of experience in sustainable construction and business optimization.',
+}
 
 const certifications = [
   {

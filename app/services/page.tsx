@@ -4,6 +4,12 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { CheckCircle } from 'lucide-react'
 import { PageHero } from "@/components/page-hero"
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'CALGreen Services & Inspections | Compliance Made Easy',
+  description: 'Ensure CALGreen compliance with expert inspections, waste management plans, and sustainable solutions tailored for your construction projects.',
+}
 
 export default function Services() {
   return (
@@ -119,7 +125,7 @@ export default function Services() {
       <section className="bg-muted py-20">
         <div className="container">
           <h2 className="text-3xl font-bold tracking-tighter text-center mb-12">How We Work Together</h2>
-          <div className="grid md:grid-cols-3 gap-8 max-w-[1000px] mx-auto">
+          <div className="grid md:grid-cols-3 gap-8 mx-auto">
             {[
               {
                 title: "Introduction",

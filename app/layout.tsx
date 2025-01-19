@@ -11,8 +11,21 @@ const nunitoSans = Nunito_Sans({
 })
 
 export const metadata: Metadata = {
-  title: 'The Blue Ladder Group',
-  description: 'Expert CALGreen Inspections and EOS Solutions for Construction Businesses',
+  title: 'CALGreen Expert & EOS Solutions | The Blue Ladder Group',
+  description: 'Expert CALGreen inspections and EOS solutions for construction businesses. Streamline operations and achieve sustainability with The Blue Ladder Group.',
+  openGraph: {
+    title: 'CALGreen Expert & EOS Solutions | The Blue Ladder Group',
+    description: 'Expert CALGreen inspections and EOS solutions for construction businesses. Streamline operations and achieve sustainability with The Blue Ladder Group.',
+    images: [
+      {
+        url: '/meta-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'The Blue Ladder Group - CALGreen Expert & EOS Solutions',
+      },
+    ],
+    type: 'website',
+  },
 }
 
 export default function RootLayout({

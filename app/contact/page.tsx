@@ -1,7 +1,5 @@
-import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
+import ContactForm from "@/components/ui/contact-form"
 import { Mail, Phone, Clock, Linkedin } from 'lucide-react'
 import type { Metadata } from 'next'
 
@@ -27,32 +25,7 @@ export default function Contact() {
       <section className="container">
         <div className="grid lg:grid-cols-2 gap-12 max-w-[1200px] mx-auto">
           {/* Form */}
-          <Card>
-            <CardHeader>
-              <CardTitle>Send Us a Message</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <form className="space-y-6">
-                <div className="space-y-2">
-                  <label htmlFor="name" className="text-sm font-medium">Name</label>
-                  <Input id="name" required />
-                </div>
-                <div className="space-y-2">
-                  <label htmlFor="email" className="text-sm font-medium">Email</label>
-                  <Input id="email" type="email" required />
-                </div>
-                <div className="space-y-2">
-                  <label htmlFor="phone" className="text-sm font-medium">Phone</label>
-                  <Input id="phone" type="tel" />
-                </div>
-                <div className="space-y-2">
-                  <label htmlFor="message" className="text-sm font-medium">Message</label>
-                  <Textarea id="message" required />
-                </div>
-                <Button type="submit" className="w-full">Submit Your Inquiry</Button>
-              </form>
-            </CardContent>
-          </Card>
+          <ContactForm />
 
           {/* Contact Info */}
           <div className="space-y-8">
@@ -103,16 +76,6 @@ export default function Contact() {
           </div>
         </div>
       </section>
-
-      {/* Final CTA 
-      <section className="container">
-        <div className="text-center space-y-8">
-          <h2 className="text-3xl font-bold tracking-tighter">Let&apos;s Build Something Amazing Together</h2>
-          <Button size="lg" asChild>
-            <a href="#contact-form">Contact Us Now</a>
-          </Button>
-        </div>
-      </section>*/}
     </div>
   )
 }
